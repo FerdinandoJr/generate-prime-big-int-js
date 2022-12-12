@@ -46,10 +46,15 @@ function isPrime(n) {
 	return true
 }
 
-function getPrimeNumber(size){
+// size is binary
+function getPrimeNumber(size=1024){
 	let n = 0
 	do{
 		n = geraBigInt(size)
 	} while(!isPrime(n))
 	return n
 }
+
+
+// Using
+console.log(getPrimeNumber(1024))
